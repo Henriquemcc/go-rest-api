@@ -15,14 +15,12 @@ func Home(w http.ResponseWriter, r *http.Request) {
 }
 
 func TodasPersonalidades(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
 	var p []models.Personalidade
 	database.DB.Find(&p)
 	json.NewEncoder(w).Encode(p)
 }
 
 func RetornaUmaPersonalidade(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
 	vars := mux.Vars(r)
 	id := vars["id"]
 	var personalidade models.Personalidade
@@ -31,7 +29,6 @@ func RetornaUmaPersonalidade(w http.ResponseWriter, r *http.Request) {
 }
 
 func CriaUmaNovaPersonalidade(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
 	var novaPersonalidade models.Personalidade
 	json.NewDecoder(r.Body).Decode(&novaPersonalidade)
 	database.DB.Create(&novaPersonalidade)
@@ -39,7 +36,6 @@ func CriaUmaNovaPersonalidade(w http.ResponseWriter, r *http.Request) {
 }
 
 func DeletaUmaPersonalidade(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
 	vars := mux.Vars(r)
 	id := vars["id"]
 	var personalidade models.Personalidade
@@ -48,7 +44,6 @@ func DeletaUmaPersonalidade(w http.ResponseWriter, r *http.Request) {
 }
 
 func EditaPersonalidade(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
 	vars := mux.Vars(r)
 	id := vars["id"]
 	var personalidade models.Personalidade
