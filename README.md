@@ -8,4 +8,4 @@ Projeto desenvolvido no curso [Go: desenvolvendo uma API Rest](https://cursos.al
 
 Os arquivos oficiais do curso, desenvolvidos pelo instrutor, estão disponíveis no repositório do Github deste curso da Alura:
 
-[]()
+[Go: desenvolvendo uma API Rest](https://github.com/alura-cursos/api-go-rest)
