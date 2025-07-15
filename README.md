@@ -17,3 +17,5 @@ Os sites externos acessados durante esse curso foram:
 https://github.com/gorilla/mux
 
 https://gorm.io/
+
+https://github.com/gorilla/handlers
