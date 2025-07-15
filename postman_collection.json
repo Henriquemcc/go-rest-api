@@ -54,7 +54,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"nome\": \"Nome Postman\",\n    \"historia\": \"historia Postman\"\n}",
+					"raw": "{\n    \"nome\": \"Postman\",\n    \"historia\": \"historia Postman\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -92,6 +92,36 @@
 						"api",
 						"personalidades",
 						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Personalidade 5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Novo Postman\",\n    \"historia\": \"Novo Postman\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/personalidades/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"personalidades",
+						"5"
 					]
 				}
 			},
